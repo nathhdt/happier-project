@@ -14,6 +14,7 @@ import { NgxMasonryOptions } from 'ngx-masonry';
 /***
  * Apps Component
  */
+
 export class IndexAppsComponent implements OnInit {
 
   public myOptions: NgxMasonryOptions = {
