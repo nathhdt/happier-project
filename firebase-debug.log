@@ -1,0 +1,21 @@
+[debug] [2021-10-29T16:17:36.267Z] ----------------------------------------------------------------------
+[debug] [2021-10-29T16:17:36.268Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-10-29T16:17:36.269Z] CLI Version:   9.20.0
+[debug] [2021-10-29T16:17:36.269Z] Platform:      darwin
+[debug] [2021-10-29T16:17:36.269Z] Node Version:  v16.4.2
+[debug] [2021-10-29T16:17:36.270Z] Time:          Fri Oct 29 2021 18:17:36 GMT+0200 (Central European Summer Time)
+[debug] [2021-10-29T16:17:36.270Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-29T16:17:36.272Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-10-29T16:17:36.333Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-29T16:17:36.334Z] > authorizing via signed-in user (nathan.haudot@gmail.com)
+[debug] [2021-10-29T16:17:36.334Z] [iam] checking project happierproject-37348 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-29T16:17:36.335Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-29T16:17:36.335Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-29T16:17:36.863Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-10-29T16:17:36.864Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-10-29T16:17:37.551Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 29 Oct 2021 16:17:37 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-29T16:17:37.616Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/happierproject-37348:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-29T16:17:38.598Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 29 Oct 2021 16:17:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=674","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
