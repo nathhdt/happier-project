@@ -1,3 +1,3 @@
 # happier-project
 
-Happier landing page
+happier project repository
